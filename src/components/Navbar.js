@@ -8,7 +8,7 @@ function Navbar() {
         <h2>Stellar</h2>
         <div>
           <a href="#">Buy now</a>
-          <a href="#">Learn More</a>
+          <a href="#content">Learn More</a>
         </div>
       </nav>
     </div>
