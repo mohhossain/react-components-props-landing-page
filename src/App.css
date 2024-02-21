@@ -1,38 +1,187 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+.App{
+  /* dark background */
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100vw;
+
+  /* add a background image */
+  background-image: url('https://img.freepik.com/free-vector/wave-background-abstract-gradient-design_483537-3688.jpg?w=2000&t=st=1708545838~exp=1708546438~hmac=ab134e9de55cfe20d1f10e772db9d660fb70b9809008848de279bf04c8522b7b');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+
+
+}
+
+.header{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100vw;
+  margin-top: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.description{
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.vr-image{
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
+  max-height: 500px;
+  margin: 0 auto;
+}
+
+.navbar {
+  /* Dark background color */
+  margin-top : 5px;
+  color: #fff;
+  /* Text color */
+  padding: 10px 20px;
+  /* Padding around content */
+  display: flex;
+  justify-content: space-between;
+  /* Align items evenly */
+  align-items: center;
+  min-width: 80vw;
+  
+  /* Center items vertically */
+}
+
+.navbar h2 {
+  margin: 0;
+  /* Remove default margin */
+  font-size: 24px;
+  /* Larger font size */
+  font-weight: 600;
+  
+  cursor: pointer;
+}
+
+.navbar a:first-child {
+  color: #000000;
+  /* Text color for links */
+  text-decoration: none;
+  /* Remove underline */
+  margin-left: 10px;
+  background-color: #aa4700;
+  padding: 10px;
+  border-radius: 15px;
+  /* Add spacing between links */
+}
+
+.navbar a {
+  color: #aa4700;
+    /* Text color for links */
+    text-decoration: none;
+    /* Remove underline */
+    margin-left: 10px;
+    background-color: #00138c;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.navbar a:hover {
+  background-color: #ff0000;
+  /* Darken the background color */
+  color: #fff;
+  /* Change text color */
+  /* smooth animation */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar a:first-child {
+  margin-left: 0;
+  /* Remove left margin for the first link */
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.model-image{
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
+  max-height: 500px;
+  margin: 0 auto;
+}
+
+.features{
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 10px;
+
+  flex-wrap: wrap;
+}
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.form input {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  max-width: 300px;
+}
+
+.form button {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  max-width: 300px;
+  background-color: #aa4700;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: #ff0000;
+  transition: background-color 0.3s;
+}
+
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #aa4700;
+  width: 100vw;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
 }
